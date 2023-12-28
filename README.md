@@ -1,5 +1,4 @@
-# javasCRIPT
-
+# javaScript
 - 👋 Hi, I’m @**M Ammaad Tehseen**
 - 🌱 I’m currently learning **BsIT**
 - This repositery contaions a **NEWSAPP**.
