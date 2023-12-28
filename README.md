@@ -1,3 +1,14 @@
+# javasCRIPT
+
+- 👋 Hi, I’m @**M Ammaad Tehseen**
+- 🌱 I’m currently learning **BsIT**
+- This repositery contaions a **NEWSAPP**.
+- 📫 How to reach me on _fb_(https://www.facebook.com/MAmmaadTehseen/)
+- https://github.com/MAmmaadTehseen/OOP-HOSTEL-MANGEMENT **(\_project_code)**
+- (https://www.fiverr.com/madikhan631?public_mode=true) **(fiver)**
+- https://www.linkedin.com/in/MAmmaadTehseen/ **(linkedin)**
+- https://www.upwork.com/freelancers/~01812b5adcd0f97ab6 **(upwork)**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
