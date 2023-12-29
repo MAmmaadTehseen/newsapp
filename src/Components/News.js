@@ -5,7 +5,7 @@ export class News extends Component {
   render() {
     return (
       <div>
-        <div className="row">
+        <div className="row m-5">
           <div className="col md-3">
             <NewsComponent />
           </div>
@@ -13,6 +13,17 @@ export class News extends Component {
             <NewsComponent />
           </div>
           <div className="col md-3">
+            <NewsComponent />
+          </div>
+        </div>
+        <div className="row m-5">
+          <div className="col  ">
+            <NewsComponent />
+          </div>
+          <div className="col ">
+            <NewsComponent />
+          </div>
+          <div className="col ">
             <NewsComponent />
           </div>
         </div>
