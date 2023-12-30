@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NewsComponent from "./NewsComponent";
+import NewsItem from "./NewsItem";
 
 export class News extends Component {
   render() {
@@ -7,24 +7,24 @@ export class News extends Component {
       <div>
         <div className="row m-5">
           <div className="col md-3">
-            <NewsComponent />
+            <NewsItem />
           </div>
           <div className="col md-3">
-            <NewsComponent />
+            <NewsItem />
           </div>
           <div className="col md-3">
-            <NewsComponent />
+            <NewsItem />
           </div>
         </div>
         <div className="row m-5">
           <div className="col  ">
-            <NewsComponent />
+            <NewsItem />
           </div>
           <div className="col ">
-            <NewsComponent />
+            <NewsItem />
           </div>
           <div className="col ">
-            <NewsComponent />
+            <NewsItem />
           </div>
         </div>
       </div>
