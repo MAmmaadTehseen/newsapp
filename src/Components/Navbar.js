@@ -31,7 +31,12 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a
+                    className="nav-link"
+                    href="https://www.livemint.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Link
                   </a>
                 </li>
