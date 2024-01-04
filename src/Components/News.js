@@ -4,7 +4,7 @@ import NewsItem from "./NewsItem";
 export class News extends Component {
   async componentDidMount() {
     let url =
-      "https://newsapi.org/v2/top-headlines?country=in&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=1&pagesize=15";
+      "https://newsapi.org/v2/top-headlines?country=in&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=1&pagesize=18";
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -13,11 +13,11 @@ export class News extends Component {
     });
   }
   nextButton = async () => {
-    console.log(Math.ceil(this.state.totalResults / 15));
+    console.log(Math.ceil(this.state.totalResults / 18));
 
     let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=${
       this.state.page + 1
-    }&pagesize=15`;
+    }&pagesize=18`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
@@ -85,7 +85,7 @@ export class News extends Component {
             className="btn btn-primary"
             onClick={this.nextButton}
             disabled={
-              this.state.page + 1 > Math.ceil(this.state.totalResults / 15)
+              this.state.page + 1 > Math.ceil(this.state.totalResults / 18)
             }
           >
             <a href="#top" className="text-light">
