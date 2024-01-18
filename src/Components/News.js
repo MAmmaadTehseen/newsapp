@@ -84,9 +84,7 @@ export class News extends Component {
             onClick={this.prevbutton}
             disabled={this.state.page <= 1}
           >
-            <a href="#top" className="text-light">
-              Previous
-            </a>
+            Previous
           </button>
           <button
             type="button"
@@ -97,9 +95,7 @@ export class News extends Component {
               Math.ceil(this.state.totalResults / this.props.pageSize)
             }
           >
-            <a href="#top" className="text-light">
-              Next
-            </a>
+            Next
           </button>
         </div>
       </div>
