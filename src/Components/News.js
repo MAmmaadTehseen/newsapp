@@ -4,7 +4,7 @@ import Spinner from "./Spinner";
 
 export class News extends Component {
   async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=1&pagesize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=1&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
@@ -17,7 +17,9 @@ export class News extends Component {
   nextButton = async () => {
     console.log(Math.ceil(this.state.totalResults / this.props.pageSize));
 
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=${
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=${
       this.state.page + 1
     }&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
@@ -30,7 +32,9 @@ export class News extends Component {
     });
   };
   prevbutton = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=${
+    let url = `https://newsapi.org/v2/top-headlines?country=${
+      this.props.country
+    }&apiKey=b8f3a473627a4f358fbe9763afea78f7&page=${
       this.state.page - 1
     }&pagesize=${this.props.pageSize}`;
     this.setState({ loading: true });
