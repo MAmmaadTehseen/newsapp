@@ -15,7 +15,9 @@ export class NewsItem extends Component {
           />
           <div className="card-body">
             <h5 className="card-title">{title}....</h5>
-            <p className="card-text">{description ? description : ""}....</p>
+            <p className="card-text">
+              {description ? description : "Description not avaliable"}....
+            </p>
             <a
               href={newsUrl}
               target="_blank"

@@ -4,7 +4,7 @@ export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg   bg-body-tertiary">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               News
@@ -25,7 +25,7 @@ export class Navbar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+                <li className="nav-item active">
                   <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
@@ -41,26 +41,18 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="/general"
-                  >
+                  <a className="nav-link " aria-current="page" href="/general">
                     General
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="/sports"
-                  >
+                  <a className="nav-link " aria-current="page" href="/sports">
                     Sports
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className="nav-link "
                     aria-current="page"
                     href="/bussiness"
                   >
@@ -68,27 +60,19 @@ export class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="/health"
-                  >
+                  <a className="nav-link " aria-current="page" href="/health">
                     Health
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="/science"
-                  >
+                  <a className="nav-link " aria-current="page" href="/science">
                     Science
                   </a>
                 </li>
 
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className="nav-link "
                     aria-current="page"
                     href="/technology"
                   >
@@ -97,7 +81,7 @@ export class Navbar extends Component {
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link active"
+                    className="nav-link "
                     aria-current="page"
                     href="/entertainment"
                   >
