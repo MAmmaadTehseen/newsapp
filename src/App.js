@@ -12,6 +12,7 @@ export default class App extends Component {
       <div>
         <Router>
           <Navbar />
+
           <Routes>
             <Route
               exact
