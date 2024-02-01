@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class NewsItem extends Component {
   render() {
-    let { title, description, imageUrl, newsUrl, author, publishedAt } =
+    let { title, description, imageUrl, newsUrl, author, publishedAt, source } =
       this.props;
     return (
       <div className="m-4">
@@ -19,14 +19,18 @@ export class NewsItem extends Component {
             <p className="card-text">
               {description ? description : "Description not avaliable"}....
             </p>
-            <p class="card-text">
-              <small class="text-success">
+            <p className="card-text">
+              <small className="text-success">
                 Published by {author ? author : "unknown"} at {publishedAt}
               </small>
+            </p>
+            <p className="card-text m-2">
+              <small className="text-warning  ">source:"{source}"</small>
             </p>
             <a
               href={newsUrl}
               target="_blank"
+              rel="noreferrer"
               className="btn btn-primary btn-sm"
             >
               Read More
