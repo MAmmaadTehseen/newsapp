@@ -46,20 +46,24 @@ export class News extends Component {
       loading: false,
     });
   };
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     console.log("Hello I am a constructor from News component");
     this.state = {
       articles: [],
       loading: false,
       page: 1,
     };
+    document.title = `${this.capitalizeFirstLetter(this.props.category)}-News`;
   }
   render() {
     return (
       <div className="container my-3 text-center">
-        <h2>NewsMonkey - Top Headlines</h2>
+        <h2>NewsMonkey - Top Headlines from {this.props.category}</h2>
         {this.state.loading && <Spinner />}
 
         <div className="row m-3">
@@ -76,6 +80,8 @@ export class News extends Component {
                         : element.urlToImage
                     }
                     newsUrl={element.url}
+                    author={element.author}
+                    publishedAt={new Date(element.publishedAt).toUTCString()}
                   />
                 </div>
               );
