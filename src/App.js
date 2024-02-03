@@ -8,12 +8,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default class App extends Component {
   pageSize = 5;
-  apiKey = 'b8f3a473627a4f358fbe9763afea78f7';
+  apiKey = 'b8f3a473627a4f358fbe9763afea78f7'
   render() {
     return (
       <div>
-        {console.log(process.env.REACT_APP_NEWS_API)}
-        {console.log("ammad")}
+
+
         <Router>
           <Navbar />
           <Routes>
