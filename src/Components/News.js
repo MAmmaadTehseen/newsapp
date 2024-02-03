@@ -19,6 +19,8 @@ const News = (props) => {
     setArticles(parsedData.articles);
     setotalResult(parsedData.totalResults);
     setLoading(false);
+    document.title = `${capitalizeFirstLetter(props.category)}-News`;
+
   }
   useEffect(() => {
     return () => {
@@ -47,7 +49,6 @@ const News = (props) => {
   }
 
 
-  // document.title = `${this.capitalizeFirstLetter(props.category)}-News`;
 
 
   return (
