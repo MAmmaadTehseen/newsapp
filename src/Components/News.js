@@ -32,7 +32,6 @@ const News = (props) => {
   );
 
   const fetchMoreData = async () => {
-    console.log(`fuction${page}`);
 
     setPage(page + 1);
 
