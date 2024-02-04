@@ -53,7 +53,7 @@ const News = (props) => {
 
   return (
     <div className="container my-3 text-center">
-      <h2>NewsMonkey - Top Headlines from {props.category}</h2>
+      <h2 style={{ marginTop: "90px" }}>NewsMonkey - Top Headlines from {props.category}</h2>
       {loading && <Spinner />}
       <InfiniteScroll
         dataLength={articles.length}
@@ -83,7 +83,7 @@ const News = (props) => {
           })}
         </div>
       </InfiniteScroll>
-    </div>
+    </div >
   );
 
 }
