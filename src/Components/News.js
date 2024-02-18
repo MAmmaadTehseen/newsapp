@@ -10,7 +10,6 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [totalResults, setotalResult] = useState(0);
 
-
   const updateNews = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&apiKey=${props.apiKey}&page=${page}&pagesize=${props.pageSize}&category=${props.category}`;
     setLoading(true);
