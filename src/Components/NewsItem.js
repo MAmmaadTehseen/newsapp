@@ -1,9 +1,16 @@
 import React from "react";
-
+import Model from "./model";
 const NewsItem = (props) => {
-
+  // const HTTP = "https://api.pawan.krd/v1/chat/completions"
   let { title, description, imageUrl, newsUrl, author, publishedAt, source } =
     props;
+  // const [prompt, setPrompt] = useState(author)
+
+  // const handlePrompt = () => {
+  //   axios.post(`${HTTP}`, { prompt }).then((res) => console.log(res)).catch((error) => { console.log(error) })
+  // }
+
+
   return (
     <div className="m-4">
       <div className="card">
@@ -27,15 +34,20 @@ const NewsItem = (props) => {
           <p className="card-text m-2">
             <small className="text-warning  ">source:"{source}"</small>
           </p>
-          <a
+          {/* <a
             href={newsUrl}
             target="_blank"
             rel="noreferrer"
             className="btn btn-primary btn-sm"
           >
             Read More
-          </a>
+          </a> */}
+          <Model title={title} />
         </div>
+        {/* <Popover content={response ? response : "Loading!!!"} title="FeedBack" trigger="click">
+          <Button onClick={getData}>Get More Info</Button>
+        </Popover> */}
+        {/* <button onClick={getData}>AI</button> */}
       </div>
     </div>
   );

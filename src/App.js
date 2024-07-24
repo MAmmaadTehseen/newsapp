@@ -38,7 +38,7 @@ const App = () => {
                 key="sports"
                 pageSize={pageSize}
                 country={"us"}
-                apiKey={apiKey}
+                apiKey={~apiKey}
                 category="sports"
               />
             }
