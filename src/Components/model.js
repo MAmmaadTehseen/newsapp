@@ -24,7 +24,6 @@ const App = ({ title }) => {
         var html = text.replace(bold, '<strong>$1</strong>');
         return html;
     }
-
     async function getData() {
         const model = genai.getGenerativeModel({ model: "gemini-pro" })
         const prompt = `get more on this${title}`
